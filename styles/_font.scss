@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../../public/assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+    font-weight: 400; // Regular weight
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../../public/assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: 600; // SemiBold weight
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../../public/assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+    font-weight: 700; // Bold weight
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans Variable';
+    src: url('../../public/assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; // Define the range of available weights
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans Variable Italic';
+    src: url('../../public/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}

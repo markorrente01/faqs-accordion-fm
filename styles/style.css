@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("../../public/assets/fonts/static/WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../../public/assets/fonts/static/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../../public/assets/fonts/static/WorkSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans Variable";
+  src: url("../../public/assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans Variable Italic";
+  src: url("../../public/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-image: url("/public/assets/images/background-pattern-desktop.svg"), linear-gradient(to bottom, hsl(275, 100%, 97%), hsl(275, 100%, 97%));
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: hsl(0, 100%, 100%);
+  max-width: 37.5rem;
+  padding: 2rem 2.3rem 1.5rem 2.3rem;
+  border-radius: 15px;
+  color: hsl(292, 42%, 14%);
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main section:not(:last-child) {
+  border-bottom: 2px solid hsl(275, 100%, 97%);
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.accordion-header .accordion-header-icon img {
+  max-width: 2.188rem;
+}
+
+.accordion-header h1 {
+  font-size: 2.5rem;
+}
+
+.accordion-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.accordion-item-header-title {
+  font-size: 18px;
+}
+
+.accordion-item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: display 0.3s linear;
+}
+
+svg {
+  fill: hsl(0, 100%, 100%);
+  border-radius: 50%;
+  background-color: hsl(281, 83%, 54%);
+  max-width: 1.563rem;
+  max-height: 1.563rem;
+  transition: transform 0.3s linear;
+}
+
+.accordion-item.active .accordion-item-header span svg {
+  transform: rotate(45deg);
+  background-color: hsl(292, 42%, 14%);
+}
+
+@media (max-width: 56.25rem) {
+  html {
+    background-image: url("/public/assets/images/background-pattern-mobile.svg"), linear-gradient(to bottom, hsl(275, 100%, 97%), hsl(275, 100%, 97%));
+  }
+}
+@media (max-width: 40.313rem) {
+  main {
+    max-width: 90%;
+    padding: 1.8rem 1rem 1rem 1rem;
+  }
+  .accordion-header h1 {
+    font-size: 30px;
+  }
+  .accordion-header .accordion-header-icon img {
+    max-width: 1.8rem;
+  }
+  .accordion-item-header-title {
+    font-size: 1.063rem;
+  }
+  .accordion-item-content {
+    font-size: 0.938rem;
+  }
+  svg {
+    max-width: 1.2rem;
+    max-height: 1.2rem;
+  }
+}
+@media (max-width: 28.125rem) {
+  main {
+    padding: 1.8rem 1.5rem 1rem 1.5rem;
+  }
+  .accordion-header h1 {
+    font-size: 28px;
+  }
+  .accordion-header .accordion-header-icon img {
+    max-width: 1.6rem;
+  }
+  .accordion-item-header-title {
+    font-size: 0.95rem;
+  }
+  .accordion-item-content {
+    font-size: 0.7rem;
+  }
+  svg {
+    max-width: 1rem;
+    max-height: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
