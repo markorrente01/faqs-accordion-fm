@@ -53,6 +53,7 @@ main section:not(:last-child){
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
+    cursor: pointer;
 }
 .accordion-item-header-title{
     font-size: 18px;
@@ -60,7 +61,7 @@ main section:not(:last-child){
 .accordion-item-content{
     max-height: 0;
     overflow: hidden;
-    transition: display .3s linear;
+    transition: max-height .2s linear;
 }
 svg{
     fill: c.$White;
@@ -68,7 +69,7 @@ svg{
     background-color: hsl(281, 83%, 54%);
     max-width: 1.563rem;
     max-height: 1.563rem;
-    transition: transform .3s linear;
+    transition: transform .2s linear;
 }
 .accordion-item.active .accordion-item-header span svg{
     transform: rotate(45deg);
