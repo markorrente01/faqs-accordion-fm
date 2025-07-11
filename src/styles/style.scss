@@ -55,8 +55,15 @@ main section:not(:last-child){
     padding: 1rem 0;
     cursor: pointer;
 }
+.accordion-item-header:focus{
+    border-color: hsl(281, 70%, 75%);
+}
 .accordion-item-header-title{
     font-size: 18px;
+    transition: color .2s linear;
+        &:hover{
+            color: hsl(281, 83%, 54%);
+        }
 }
 .accordion-item-content{
     max-height: 0;

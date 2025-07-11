@@ -97,8 +97,16 @@ main section:not(:last-child) {
   cursor: pointer;
 }
 
+.accordion-item-header:focus {
+  border-color: hsl(281, 70%, 75%);
+}
+
 .accordion-item-header-title {
   font-size: 18px;
+  transition: color 0.2s linear;
+}
+.accordion-item-header-title:hover {
+  color: hsl(281, 83%, 54%);
 }
 
 .accordion-item-content {
