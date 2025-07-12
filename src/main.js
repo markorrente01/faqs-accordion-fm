@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
     // add the event listeners via loop
     accordions.forEach((item, index)=>{
-        // create unique names using the index for the attr 'aria-controls'
+        // create unique names using the index for the attr values for 'aria-controls'
         const contentId = `content-${index}`;
         const header = item.querySelector('.accordion-item-header');
             header.setAttribute('aria-controls', contentId);
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             header.addEventListener('keydown', (e)=>{
                 switch (e.key) {
                     case 'Enter':
-                    case ' ':
+                    case ' ': // on keydown spaceBar
                         // prevent default scroll down when spaceBar key is pressed
                         e.preventDefault();
                         toggleAccordion(item)
